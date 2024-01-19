@@ -1,0 +1,43 @@
+Manea Andrei Iulian 321CB
+
+------------------------------------------------------ TEMA 2 POO ------------------------------------------------------
+
+     Pentru tema a doua, am ales sa folosesc ArrayList-urile pentru o implementare succinta si relevanta a cerintei. Voi
+detalia mai jos cateva motivatii pentru care am ales sa folosesc ArrayList-urile in locul altor elemente din Java
+Collections. Dar, mai intai, voi face o prezentare succinta a codului meu.
+
+    In clasa Main, am creat un array de fisiere, cele aferete fiecarui test, un fisier de input si unul de output si am
+initializat un obiect de tip Secretariat, pe care il voi folosi pe tot parcursul programului. Aceasta este, practic,
+instanta prin care se apeleaza toate functionaliatile programului. In continuare, pentru fiecare test, am citit din
+fisierul de input, pe rand, fiecare comanda si i-am retinut parametrii intr-un array, cu ajutorul caruia am apelat
+metoda commandExec, care trateaza toate comenzile cerute catre implementare. In metoda commandExec din Main, am folosit
+o structura if-else pentru a trata fiecare comanda in parte. Fiecare caz este tratat relevant si are unul sau mai multe
+comentarii care prezinta ideea din spatele implementarii.
+
+    In clasa Secretariat, am implementat metodele de interactionare intre instantele Student-Curs-Secretariat. Am
+folosit un ArrayList de Studenti si unul de Cursuri pentru a retine toti studentii si toate cursurile. Metodele create
+sunt relevante pentru implementarea cerintelor si au comentarii aferente pentru claritate.
+
+    Clasa Student contine un ArrayList de cursuri preferate, care este folosit pentru a fi repartizat de catre
+secretariat. Metodele folosite in rest sunt getteri si setteri pentru a accesa si modifica atributele private ale
+studentului respectiv. Clasele BachelorStudent si MasterStudent extind clasa Student si au implementate metodele
+principale ale clasei Student.
+
+    Clasa Curs contine un ArrayList de studenti inscrisi, care este folosit pentru a fi repartizat de catre secretariat.
+De asemenea, sunt implementate metode de getteri pentru a accesa atributele private ale cursului.
+
+    Clasa StudentComparator este folosita pentru a sorta studentii in functie de media lor, iar apoi in ordine
+afabetica, iar clasa StudentNameComparator este folosita pentru a sorta studentii direct in ordine alfabetica.
+
+    Clasa DuplicateStudentException este folosita pentru a trata cazul in care se va adauga un student care exista deja
+in baza de date a secretariatului. In clasa Main este tratat aceasta exceptie si aruncata in cazul gasirii studentului
+duplicat, caz in care se scrie in fisierul de output un mesaj sugestiv.
+
+    Cateva din motivele utilizarii ArrayList-urilor sunt:
+         - sunt mai usor de folosit si de inteles si mai putin complexe decat alte structuri de date din Java
+    Collections, cum ar fi HashMap, TreeSet, etc. (nu am considerat necesara o implementare foarte complexa)
+         - ofera ordine si acces direct la elementele din lista, ceea ce este necesar pentru implementarea cerintelor
+         - au functionalitati high-level
+
+
+
