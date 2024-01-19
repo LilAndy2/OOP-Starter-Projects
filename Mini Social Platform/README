@@ -1,0 +1,46 @@
+------------------------------------------------ MINI SOCIAL PLATFORM ------------------------------------------------
+    NOTE: This project belongs to Manea Andrei Iulian, 321CB ACS CTI - Faculty of Automatic Control and Computer
+Science. Please refer to @LilAndy2 on Github for any questions regarding the implementation.
+
+    This project's purpose is to create a mini social platform that receives commands from the command line and
+executes them according to the parameters given. I will now present you my implementation for this project.
+
+    I created four classes (App, User, Post and Comment) and one Interface (Likeable), which have fields, constructors
+and methods that interact with each others throughout the code. By implementing the classes this way, my code is
+modular and divided well enough for any reader to understand the flow of the implementation. I will briefly present
+the fields and methods for each of the four classes.
+
+    In the App class, the main way to store the data of the app was by creating three arrays: one for all the users,
+one for all the posts and one for all the comments in the platform. This way I am able to access every bit of data in
+the app at any point of time. I implemented methods that help me verify all sorts of aspects in the platform and which
+are labeled suggestively (e.g. CheckIfUserExists or SeeIfUserLikedThatPostAlready etc.). Most of the methods have the
+access modifier 'private', this way preventing other classes of modifying them. The main method handles every case of
+command which an user can type in the command line and displays messages suggesting the state of the command. For
+details regarding the methods implementation, each of them has a short description listed below them in the code.
+
+    In the User class, the main way to store the data is through the class' fields and arrays. There are three arrays:
+one for the users followed, one for the liked posts and one for the liked comments. Data about the users is manipulated
+according to the needs in the other classes. For details regarding the methods implementation, each of them has a short
+description listed below them in the code.
+
+    The Post and Comment classes are quite similar, implementing specific fields and methods. They both have two Id
+fields, one for the current post/comment and one for the general count of the objects. This way, I can efficiently find
+every post/comment by its Id. Also, every post has an array of comments so that I can access the comments of a post at
+any time.
+
+    For the bonus tasks, these could be some other ideas for implementing:
+    1. What other limit cases can be dealt with in this app?
+        - Sharing another user's post so that it appears on your page under his name (retweet style);
+        - Other kind of likes (haha, angry, surprised etc.) instead of only the default one;
+        - Implementing an archive of posts/comments that were deleted;
+        - Taking care of the post / comment ID while deleting, because if you can delete a post with teh ID 3 from a
+    total of 5 posts, then the posts with IDs 4 and 5 should have the new IDs 3 and 4 after the deletion;
+        - Implementing public / private profiles, so that you don't actually need to follow someone who has a public
+    profile in order to see their posts.
+
+    2. How could some of the commands and messages from the app be refactored?
+        - A login command could be implemented and only after that should the user be able to perform actions (instead
+    of each command having the logging credentials of the user);
+        - A separate class that would handle errors regarding the parameters of the command give, so that the code is
+    more modular;
+        - Utilisation of personalised exceptions to handle errors of the commands.
