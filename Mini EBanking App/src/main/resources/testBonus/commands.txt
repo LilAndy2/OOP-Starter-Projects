@@ -1,0 +1,14 @@
+CREATE USER bob.stucky@email.com Bob Stucky 687 Swanson Dr. New York NY 10024
+LIST USER bob.stucky@email.com
+RECOMMEND STOCKS
+ADD ACCOUNT bob.stucky@email.com USD
+ADD ACCOUNT bob.stucky@email.com EUR
+ADD MONEY bob.stucky@email.com USD 50000
+BUY PREMIUM bob.stucky@email.com
+LIST PORTFOLIO bob.stucky@email.com
+EXCHANGE MONEY bob.stucky@email.com USD EUR 18000
+LIST PORTFOLIO bob.stucky@email.com
+BUY STOCKS bob.stucky@email.com TSLA 10
+LIST PORTFOLIO bob.stucky@email.com
+BUY STOCKS bob.stucky@email.com KO 10
+LIST PORTFOLIO bob.stucky@email.com

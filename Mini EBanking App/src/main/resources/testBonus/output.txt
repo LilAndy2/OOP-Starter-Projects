@@ -1,0 +1,6 @@
+{"email":"bob.stucky@email.com","firstname":"Bob","lastname":"Stucky","address":"687 Swanson Dr. New York NY 10024","friends":[]}
+{"stocksToBuy":["KO","JPM","AMZN"]}
+{"stocks":[],"accounts":[{"currencyName":"USD","amount":"49900.00"},{"currencyName":"EUR","amount":"0.00"}]}
+{"stocks":[],"accounts":[{"currencyName":"USD","amount":"21280.00"},{"currencyName":"EUR","amount":"18000.00"}]}
+{"stocks":[{"stockName":"TSLA","amount":10}],"accounts":[{"currencyName":"USD","amount":"19013.10"},{"currencyName":"EUR","amount":"18000.00"}]}
+{"stocks":[{"stockName":"TSLA","amount":10},{"stockName":"KO","amount":10}],"accounts":[{"currencyName":"USD","amount":"18445.05"},{"currencyName":"EUR","amount":"18000.00"}]}
